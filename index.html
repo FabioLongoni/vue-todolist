@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExVue</title>
+    <title>Todolist</title>
 </head>
 <body>
     
@@ -32,13 +32,18 @@
                         :class="[todo.done ? 'done' : '',classiTodos]"
                         v-for="(todo,index) in todos">
                             {{todo.text}}
-                            <i @click="toggleDoneOf(todo)" class="fa-regular fa-circle-xmark"></i>
+                        <i @click="toggleDoneOf(todo)" class="fa-regular fa-circle-xmark"></i>
                     </li>
                 </ul>
             </div>
             <div class="container">
+                <h1>Done</h1>
                 <ul class="todoList">
-
+                    <template v-for="todo in todos">
+                        <li v-if="todo.done" class="todo">
+                            {{ todo.text }}
+                        </li>
+                    </template>
                 </ul>
             </div>
         </main>
