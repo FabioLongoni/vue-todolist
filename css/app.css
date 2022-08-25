@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(186, 209, 207);
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+header {
+    padding: 2rem 3rem 0;
+}
+
+.container {
+    max-width: 0 auto;
+    padding: 2rem 3rem 0;
+}
+
+ul,
+ol,
+menu {
+    text-decoration: none;
+    list-style: none;
+}
+
+.todo {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 10px;
+    background-color: rgb(62, 179, 163);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.done {
+    background-color: rgb(226, 240, 240);
+    color: rgb(105, 138, 127);
+}
